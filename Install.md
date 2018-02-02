@@ -11,4 +11,4 @@
 * Then run `gem install rails -v 5.1.3`
 
 ## Windows
-* Go to this url to download a VM: [bit.ly/vmRoR](bit.ly/vmRoR)
+* Go to this url to download a VM: bit.ly/vmRoR
