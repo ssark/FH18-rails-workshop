@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hacker.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @hacker.age %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @hacker.school %>
+</p>
+
+<%= link_to 'Edit', edit_hacker_path(@hacker) %> |
+<%= link_to 'Back', hackers_path %>

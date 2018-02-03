@@ -1,0 +1,259 @@
+Started GET "/" for 127.0.0.1 at 2018-02-02 19:33:21 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sanjanasarkar/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sanjanasarkar/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (8.6ms)
+Completed 200 OK in 366ms (Views: 17.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-02-02 19:41:34 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.4) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.4) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.2) lib/puma/configuration.rb:225:in `call'
+puma (3.11.2) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.2) lib/puma/server.rb:438:in `process_client'
+puma (3.11.2) lib/puma/server.rb:302:in `block in run'
+puma (3.11.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHackers (20180203004006)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "hackers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer, "school" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180203004006"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-02-03 00:42:32.519200"], ["updated_at", "2018-02-03 00:42:32.519200"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2018-02-02 19:42:46 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/sanjanasarkar/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/sanjanasarkar/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (2.9ms)
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:42:59 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.2ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 917ms (Views: 911.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hackers/new" for 127.0.0.1 at 2018-02-02 19:43:19 -0500
+Processing by HackersController#new as HTML
+  Rendering hackers/new.html.erb within layouts/application
+  Rendered hackers/_form.html.erb (35.0ms)
+  Rendered hackers/new.html.erb within layouts/application (38.3ms)
+Completed 200 OK in 76ms (Views: 56.9ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/hackers" for 127.0.0.1 at 2018-02-02 19:43:30 -0500
+Processing by HackersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/+U1IliCPSpc+fa11xWRlvoLAWtgiWQmWSZLo1OtoFXa/J9Yn7BmDWwi19g2XjG58VRaqiLwCqPCjOCdv87Lew==", "hacker"=>{"name"=>"Jane", "age"=>"19", "school"=>"Upenn"}, "commit"=>"Create Hacker"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "hackers" ("name", "age", "school", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jane"], ["age", 19], ["school", "Upenn"], ["created_at", "2018-02-03 00:43:30.456620"], ["updated_at", "2018-02-03 00:43:30.456620"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hackers/1
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/hackers/1" for 127.0.0.1 at 2018-02-02 19:43:30 -0500
+Processing by HackersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHacker Load (0.3ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hackers/show.html.erb within layouts/application
+  Rendered hackers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 42ms (Views: 17.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:43:40 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.3ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hackers/1/edit" for 127.0.0.1 at 2018-02-02 19:43:47 -0500
+Processing by HackersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHacker Load (0.3ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hackers/edit.html.erb within layouts/application
+  Rendered hackers/_form.html.erb (5.4ms)
+  Rendered hackers/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 44ms (Views: 35.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/hackers/1" for 127.0.0.1 at 2018-02-02 19:43:53 -0500
+Processing by HackersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VByR8CpXmvgpkHdb5muaGji3x9HXEdP/N5racocs+MkxRGNES/5D7bxn50v+orIf3NJ9ZbBgYEpea2cLQ5Xs9A==", "hacker"=>{"name"=>"Jane", "age"=>"23", "school"=>"Upenn"}, "commit"=>"Update Hacker", "id"=>"1"}
+  [1m[36mHacker Load (0.4ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "hackers" SET "age" = ?, "updated_at" = ? WHERE "hackers"."id" = ?[0m  [["age", 23], ["updated_at", "2018-02-03 00:43:53.560679"], ["id", 1]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hackers/1
+Completed 302 Found in 8ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/hackers/1" for 127.0.0.1 at 2018-02-02 19:43:53 -0500
+Processing by HackersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHacker Load (0.1ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering hackers/show.html.erb within layouts/application
+  Rendered hackers/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:43:54 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.4ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/hackers/1" for 127.0.0.1 at 2018-02-02 19:43:59 -0500
+Processing by HackersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bvFSN5Y246Ma3J++YvB8CVX9iM79lGjIxhwkP9Ee5S9JZ2Gd3Mp/SWrS8uCNJ9IdtwtmUZqBQossjY+rR9+tXA==", "id"=>"1"}
+  [1m[36mHacker Load (0.2ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "hackers" WHERE "hackers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hackers
+Completed 302 Found in 6ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:43:59 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.3ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 21.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/hackers/new" for 127.0.0.1 at 2018-02-02 19:44:01 -0500
+Processing by HackersController#new as HTML
+  Rendering hackers/new.html.erb within layouts/application
+  Rendered hackers/_form.html.erb (6.0ms)
+  Rendered hackers/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:47:31 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.2ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hackers/new" for 127.0.0.1 at 2018-02-02 19:47:33 -0500
+Processing by HackersController#new as HTML
+  Rendering hackers/new.html.erb within layouts/application
+  Rendered hackers/_form.html.erb (6.9ms)
+  Rendered hackers/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/hackers" for 127.0.0.1 at 2018-02-02 19:47:39 -0500
+Processing by HackersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VA/F1kwk/zyiAAAVp277i+g6Nzaifo5mui5+FreDV4FxFm+sixakG5LbIXhGJVuk42Vs9+AH4OMhhNUoW+A8rw==", "hacker"=>{"name"=>"Jane", "age"=>"19", "school"=>"Upenn"}, "commit"=>"Create Hacker"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "hackers" ("name", "age", "school", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Jane"], ["age", 19], ["school", "Upenn"], ["created_at", "2018-02-03 00:47:39.894620"], ["updated_at", "2018-02-03 00:47:39.894620"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/hackers/2
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/hackers/2" for 127.0.0.1 at 2018-02-02 19:47:39 -0500
+Processing by HackersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHacker Load (0.2ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering hackers/show.html.erb within layouts/application
+  Rendered hackers/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:47:41 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.5ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hackers/new" for 127.0.0.1 at 2018-02-02 19:47:53 -0500
+Processing by HackersController#new as HTML
+  Rendering hackers/new.html.erb within layouts/application
+  Rendered hackers/_form.html.erb (2.8ms)
+  Rendered hackers/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hackers" for 127.0.0.1 at 2018-02-02 19:48:20 -0500
+Processing by HackersController#index as HTML
+  Rendering hackers/index.html.erb within layouts/application
+  [1m[36mHacker Load (0.4ms)[0m  [1m[34mSELECT "hackers".* FROM "hackers"[0m
+  Rendered hackers/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hackers/1" for 127.0.0.1 at 2018-02-02 19:48:23 -0500
+Processing by HackersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHacker Load (0.1ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Hacker with 'id'=1):
+  
+app/controllers/hackers_controller.rb:67:in `set_hacker'
+Started GET "/hackers/2" for 127.0.0.1 at 2018-02-02 19:48:28 -0500
+Processing by HackersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHacker Load (0.2ms)[0m  [1m[34mSELECT  "hackers".* FROM "hackers" WHERE "hackers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering hackers/show.html.erb within layouts/application
+  Rendered hackers/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 40ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
